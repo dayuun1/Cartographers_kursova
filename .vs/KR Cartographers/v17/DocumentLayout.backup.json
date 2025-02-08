@@ -1,0 +1,471 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\KR Cartographers\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5B2FE005-3A1A-4120-883D-0C45D6F4A0ED}|KR Cartographers\\KR Cartographers.csproj|e:\\\u043D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\kr cartographers\\kr cartographers\\models\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B2FE005-3A1A-4120-883D-0C45D6F4A0ED}|KR Cartographers\\KR Cartographers.csproj|solutionrelative:kr cartographers\\models\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B2FE005-3A1A-4120-883D-0C45D6F4A0ED}|KR Cartographers\\KR Cartographers.csproj|e:\\\u043D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\kr cartographers\\kr cartographers\\models\\conditionscard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B2FE005-3A1A-4120-883D-0C45D6F4A0ED}|KR Cartographers\\KR Cartographers.csproj|solutionrelative:kr cartographers\\models\\conditionscard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B2FE005-3A1A-4120-883D-0C45D6F4A0ED}|KR Cartographers\\KR Cartographers.csproj|e:\\\u043D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\kr cartographers\\kr cartographers\\viewmodels\\oneplayergameviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B2FE005-3A1A-4120-883D-0C45D6F4A0ED}|KR Cartographers\\KR Cartographers.csproj|solutionrelative:kr cartographers\\viewmodels\\oneplayergameviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B2FE005-3A1A-4120-883D-0C45D6F4A0ED}|KR Cartographers\\KR Cartographers.csproj|e:\\\u043D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\kr cartographers\\kr cartographers\\models\\conditionalcardtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B2FE005-3A1A-4120-883D-0C45D6F4A0ED}|KR Cartographers\\KR Cartographers.csproj|solutionrelative:kr cartographers\\models\\conditionalcardtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B2FE005-3A1A-4120-883D-0C45D6F4A0ED}|KR Cartographers\\KR Cartographers.csproj|e:\\\u043D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\kr cartographers\\kr cartographers\\viewmodels\\cellviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B2FE005-3A1A-4120-883D-0C45D6F4A0ED}|KR Cartographers\\KR Cartographers.csproj|solutionrelative:kr cartographers\\viewmodels\\cellviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B2FE005-3A1A-4120-883D-0C45D6F4A0ED}|KR Cartographers\\KR Cartographers.csproj|e:\\\u043D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\kr cartographers\\kr cartographers\\viewmodels\\mediator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B2FE005-3A1A-4120-883D-0C45D6F4A0ED}|KR Cartographers\\KR Cartographers.csproj|solutionrelative:kr cartographers\\viewmodels\\mediator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B2FE005-3A1A-4120-883D-0C45D6F4A0ED}|KR Cartographers\\KR Cartographers.csproj|e:\\\u043D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\kr cartographers\\kr cartographers\\viewmodels\\menuviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B2FE005-3A1A-4120-883D-0C45D6F4A0ED}|KR Cartographers\\KR Cartographers.csproj|solutionrelative:kr cartographers\\viewmodels\\menuviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B2FE005-3A1A-4120-883D-0C45D6F4A0ED}|KR Cartographers\\KR Cartographers.csproj|e:\\\u043D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\kr cartographers\\kr cartographers\\models\\cblock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B2FE005-3A1A-4120-883D-0C45D6F4A0ED}|KR Cartographers\\KR Cartographers.csproj|solutionrelative:kr cartographers\\models\\cblock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B2FE005-3A1A-4120-883D-0C45D6F4A0ED}|KR Cartographers\\KR Cartographers.csproj|e:\\\u043D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\kr cartographers\\kr cartographers\\models\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B2FE005-3A1A-4120-883D-0C45D6F4A0ED}|KR Cartographers\\KR Cartographers.csproj|solutionrelative:kr cartographers\\models\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B2FE005-3A1A-4120-883D-0C45D6F4A0ED}|KR Cartographers\\KR Cartographers.csproj|e:\\\u043D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\kr cartographers\\kr cartographers\\models\\btilblock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B2FE005-3A1A-4120-883D-0C45D6F4A0ED}|KR Cartographers\\KR Cartographers.csproj|solutionrelative:kr cartographers\\models\\btilblock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B2FE005-3A1A-4120-883D-0C45D6F4A0ED}|KR Cartographers\\KR Cartographers.csproj|e:\\\u043D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\kr cartographers\\kr cartographers\\models\\stblock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B2FE005-3A1A-4120-883D-0C45D6F4A0ED}|KR Cartographers\\KR Cartographers.csproj|solutionrelative:kr cartographers\\models\\stblock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B2FE005-3A1A-4120-883D-0C45D6F4A0ED}|KR Cartographers\\KR Cartographers.csproj|e:\\\u043D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\kr cartographers\\kr cartographers\\models\\tblock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B2FE005-3A1A-4120-883D-0C45D6F4A0ED}|KR Cartographers\\KR Cartographers.csproj|solutionrelative:kr cartographers\\models\\tblock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B2FE005-3A1A-4120-883D-0C45D6F4A0ED}|KR Cartographers\\KR Cartographers.csproj|e:\\\u043D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\kr cartographers\\kr cartographers\\models\\terraintype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B2FE005-3A1A-4120-883D-0C45D6F4A0ED}|KR Cartographers\\KR Cartographers.csproj|solutionrelative:kr cartographers\\models\\terraintype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B2FE005-3A1A-4120-883D-0C45D6F4A0ED}|KR Cartographers\\KR Cartographers.csproj|e:\\\u043D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\kr cartographers\\kr cartographers\\kr cartographers.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{5B2FE005-3A1A-4120-883D-0C45D6F4A0ED}|KR Cartographers\\KR Cartographers.csproj|solutionrelative:kr cartographers\\kr cartographers.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B2FE005-3A1A-4120-883D-0C45D6F4A0ED}|KR Cartographers\\KR Cartographers.csproj|e:\\\u043D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\kr cartographers\\kr cartographers\\view\\menuwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5B2FE005-3A1A-4120-883D-0C45D6F4A0ED}|KR Cartographers\\KR Cartographers.csproj|solutionrelative:kr cartographers\\view\\menuwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B2FE005-3A1A-4120-883D-0C45D6F4A0ED}|KR Cartographers\\KR Cartographers.csproj|e:\\\u043D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\kr cartographers\\kr cartographers\\view\\twoplayersgamewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5B2FE005-3A1A-4120-883D-0C45D6F4A0ED}|KR Cartographers\\KR Cartographers.csproj|solutionrelative:kr cartographers\\view\\twoplayersgamewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B2FE005-3A1A-4120-883D-0C45D6F4A0ED}|KR Cartographers\\KR Cartographers.csproj|e:\\\u043D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\kr cartographers\\kr cartographers\\view\\oneplayergamewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5B2FE005-3A1A-4120-883D-0C45D6F4A0ED}|KR Cartographers\\KR Cartographers.csproj|solutionrelative:kr cartographers\\view\\oneplayergamewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B2FE005-3A1A-4120-883D-0C45D6F4A0ED}|KR Cartographers\\KR Cartographers.csproj|e:\\\u043D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\kr cartographers\\kr cartographers\\models\\vblock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B2FE005-3A1A-4120-883D-0C45D6F4A0ED}|KR Cartographers\\KR Cartographers.csproj|solutionrelative:kr cartographers\\models\\vblock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B2FE005-3A1A-4120-883D-0C45D6F4A0ED}|KR Cartographers\\KR Cartographers.csproj|e:\\\u043D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\kr cartographers\\kr cartographers\\models\\seasons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B2FE005-3A1A-4120-883D-0C45D6F4A0ED}|KR Cartographers\\KR Cartographers.csproj|solutionrelative:kr cartographers\\models\\seasons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B2FE005-3A1A-4120-883D-0C45D6F4A0ED}|KR Cartographers\\KR Cartographers.csproj|e:\\\u043D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\kr cartographers\\kr cartographers\\models\\qblock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B2FE005-3A1A-4120-883D-0C45D6F4A0ED}|KR Cartographers\\KR Cartographers.csproj|solutionrelative:kr cartographers\\models\\qblock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B2FE005-3A1A-4120-883D-0C45D6F4A0ED}|KR Cartographers\\KR Cartographers.csproj|e:\\\u043D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\kr cartographers\\kr cartographers\\models\\position.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B2FE005-3A1A-4120-883D-0C45D6F4A0ED}|KR Cartographers\\KR Cartographers.csproj|solutionrelative:kr cartographers\\models\\position.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B2FE005-3A1A-4120-883D-0C45D6F4A0ED}|KR Cartographers\\KR Cartographers.csproj|e:\\\u043D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\kr cartographers\\kr cartographers\\models\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B2FE005-3A1A-4120-883D-0C45D6F4A0ED}|KR Cartographers\\KR Cartographers.csproj|solutionrelative:kr cartographers\\models\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B2FE005-3A1A-4120-883D-0C45D6F4A0ED}|KR Cartographers\\KR Cartographers.csproj|e:\\\u043D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\kr cartographers\\kr cartographers\\models\\iiblock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B2FE005-3A1A-4120-883D-0C45D6F4A0ED}|KR Cartographers\\KR Cartographers.csproj|solutionrelative:kr cartographers\\models\\iiblock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B2FE005-3A1A-4120-883D-0C45D6F4A0ED}|KR Cartographers\\KR Cartographers.csproj|e:\\\u043D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\kr cartographers\\kr cartographers\\models\\i3block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B2FE005-3A1A-4120-883D-0C45D6F4A0ED}|KR Cartographers\\KR Cartographers.csproj|solutionrelative:kr cartographers\\models\\i3block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B2FE005-3A1A-4120-883D-0C45D6F4A0ED}|KR Cartographers\\KR Cartographers.csproj|e:\\\u043D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\kr cartographers\\kr cartographers\\models\\i2block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B2FE005-3A1A-4120-883D-0C45D6F4A0ED}|KR Cartographers\\KR Cartographers.csproj|solutionrelative:kr cartographers\\models\\i2block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B2FE005-3A1A-4120-883D-0C45D6F4A0ED}|KR Cartographers\\KR Cartographers.csproj|e:\\\u043D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\kr cartographers\\kr cartographers\\models\\gamegrid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B2FE005-3A1A-4120-883D-0C45D6F4A0ED}|KR Cartographers\\KR Cartographers.csproj|solutionrelative:kr cartographers\\models\\gamegrid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B2FE005-3A1A-4120-883D-0C45D6F4A0ED}|KR Cartographers\\KR Cartographers.csproj|e:\\\u043D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\kr cartographers\\kr cartographers\\models\\dotblock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B2FE005-3A1A-4120-883D-0C45D6F4A0ED}|KR Cartographers\\KR Cartographers.csproj|solutionrelative:kr cartographers\\models\\dotblock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B2FE005-3A1A-4120-883D-0C45D6F4A0ED}|KR Cartographers\\KR Cartographers.csproj|e:\\\u043D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\kr cartographers\\kr cartographers\\models\\block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B2FE005-3A1A-4120-883D-0C45D6F4A0ED}|KR Cartographers\\KR Cartographers.csproj|solutionrelative:kr cartographers\\models\\block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ConditionsCard.cs",
+              "DocumentMoniker": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\KR Cartographers\\KR Cartographers\\Models\\ConditionsCard.cs",
+              "RelativeDocumentMoniker": "KR Cartographers\\Models\\ConditionsCard.cs",
+              "ToolTip": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\KR Cartographers\\KR Cartographers\\Models\\ConditionsCard.cs",
+              "RelativeToolTip": "KR Cartographers\\Models\\ConditionsCard.cs",
+              "ViewState": "AgIAALkAAAAAAAAAAAAIwCAAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T18:04:59.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ConditionalCardType.cs",
+              "DocumentMoniker": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\KR Cartographers\\KR Cartographers\\Models\\ConditionalCardType.cs",
+              "RelativeDocumentMoniker": "KR Cartographers\\Models\\ConditionalCardType.cs",
+              "ToolTip": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\KR Cartographers\\KR Cartographers\\Models\\ConditionalCardType.cs",
+              "RelativeToolTip": "KR Cartographers\\Models\\ConditionalCardType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T18:04:37.422Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CBlock.cs",
+              "DocumentMoniker": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\KR Cartographers\\KR Cartographers\\Models\\CBlock.cs",
+              "RelativeDocumentMoniker": "KR Cartographers\\Models\\CBlock.cs",
+              "ToolTip": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\KR Cartographers\\KR Cartographers\\Models\\CBlock.cs",
+              "RelativeToolTip": "KR Cartographers\\Models\\CBlock.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T18:04:35.662Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BTilBlock.cs",
+              "DocumentMoniker": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\KR Cartographers\\KR Cartographers\\Models\\BTilBlock.cs",
+              "RelativeDocumentMoniker": "KR Cartographers\\Models\\BTilBlock.cs",
+              "ToolTip": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\KR Cartographers\\KR Cartographers\\Models\\BTilBlock.cs",
+              "RelativeToolTip": "KR Cartographers\\Models\\BTilBlock.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T18:03:42.724Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Card.cs",
+              "DocumentMoniker": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\KR Cartographers\\KR Cartographers\\Models\\Card.cs",
+              "RelativeDocumentMoniker": "KR Cartographers\\Models\\Card.cs",
+              "ToolTip": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\KR Cartographers\\KR Cartographers\\Models\\Card.cs",
+              "RelativeToolTip": "KR Cartographers\\Models\\Card.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T18:03:55.75Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Mediator.cs",
+              "DocumentMoniker": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\KR Cartographers\\KR Cartographers\\ViewModels\\Mediator.cs",
+              "RelativeDocumentMoniker": "KR Cartographers\\ViewModels\\Mediator.cs",
+              "ToolTip": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\KR Cartographers\\KR Cartographers\\ViewModels\\Mediator.cs",
+              "RelativeToolTip": "KR Cartographers\\ViewModels\\Mediator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T18:09:11.983Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MenuViewModel.cs",
+              "DocumentMoniker": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\KR Cartographers\\KR Cartographers\\ViewModels\\MenuViewModel.cs",
+              "RelativeDocumentMoniker": "KR Cartographers\\ViewModels\\MenuViewModel.cs",
+              "ToolTip": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\KR Cartographers\\KR Cartographers\\ViewModels\\MenuViewModel.cs",
+              "RelativeToolTip": "KR Cartographers\\ViewModels\\MenuViewModel.cs",
+              "ViewState": "AgIAAJ4AAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T18:09:15.351Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OnePlayerGameViewModel.cs",
+              "DocumentMoniker": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\KR Cartographers\\KR Cartographers\\ViewModels\\OnePlayerGameViewModel.cs",
+              "RelativeDocumentMoniker": "KR Cartographers\\ViewModels\\OnePlayerGameViewModel.cs",
+              "ToolTip": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\KR Cartographers\\KR Cartographers\\ViewModels\\OnePlayerGameViewModel.cs",
+              "RelativeToolTip": "KR Cartographers\\ViewModels\\OnePlayerGameViewModel.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAA7wEMAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T18:09:39.878Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CellViewModel.cs",
+              "DocumentMoniker": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\KR Cartographers\\KR Cartographers\\ViewModels\\CellViewModel.cs",
+              "RelativeDocumentMoniker": "KR Cartographers\\ViewModels\\CellViewModel.cs",
+              "ToolTip": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\KR Cartographers\\KR Cartographers\\ViewModels\\CellViewModel.cs",
+              "RelativeToolTip": "KR Cartographers\\ViewModels\\CellViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T18:09:05.583Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Game.cs",
+              "DocumentMoniker": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\KR Cartographers\\KR Cartographers\\Models\\Game.cs",
+              "RelativeDocumentMoniker": "KR Cartographers\\Models\\Game.cs",
+              "ToolTip": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\KR Cartographers\\KR Cartographers\\Models\\Game.cs",
+              "RelativeToolTip": "KR Cartographers\\Models\\Game.cs",
+              "ViewState": "AgIAAAcBAAAAAAAAAAAQwCcBAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T18:06:04.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "STBlock.cs",
+              "DocumentMoniker": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\KR Cartographers\\KR Cartographers\\Models\\STBlock.cs",
+              "RelativeDocumentMoniker": "KR Cartographers\\Models\\STBlock.cs",
+              "ToolTip": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\KR Cartographers\\KR Cartographers\\Models\\STBlock.cs",
+              "RelativeToolTip": "KR Cartographers\\Models\\STBlock.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-07T21:59:04.385Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "TBlock.cs",
+              "DocumentMoniker": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\KR Cartographers\\KR Cartographers\\Models\\TBlock.cs",
+              "RelativeDocumentMoniker": "KR Cartographers\\Models\\TBlock.cs",
+              "ToolTip": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\KR Cartographers\\KR Cartographers\\Models\\TBlock.cs",
+              "RelativeToolTip": "KR Cartographers\\Models\\TBlock.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-07T21:59:03.524Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "KR Cartographers.csproj",
+              "DocumentMoniker": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\KR Cartographers\\KR Cartographers\\KR Cartographers.csproj",
+              "RelativeDocumentMoniker": "KR Cartographers\\KR Cartographers.csproj",
+              "ToolTip": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\KR Cartographers\\KR Cartographers\\KR Cartographers.csproj",
+              "RelativeToolTip": "KR Cartographers\\KR Cartographers.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-07T21:52:06.468Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MenuWindow.xaml",
+              "DocumentMoniker": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\KR Cartographers\\KR Cartographers\\View\\MenuWindow.xaml",
+              "RelativeDocumentMoniker": "KR Cartographers\\View\\MenuWindow.xaml",
+              "ToolTip": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\KR Cartographers\\KR Cartographers\\View\\MenuWindow.xaml",
+              "RelativeToolTip": "KR Cartographers\\View\\MenuWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-09T18:07:59.791Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "OnePlayerGameWindow.xaml",
+              "DocumentMoniker": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\KR Cartographers\\KR Cartographers\\View\\OnePlayerGameWindow.xaml",
+              "RelativeDocumentMoniker": "KR Cartographers\\View\\OnePlayerGameWindow.xaml",
+              "ToolTip": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\KR Cartographers\\KR Cartographers\\View\\OnePlayerGameWindow.xaml",
+              "RelativeToolTip": "KR Cartographers\\View\\OnePlayerGameWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-09T18:08:35.252Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "TwoPlayersGameWindow.xaml",
+              "DocumentMoniker": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\KR Cartographers\\KR Cartographers\\View\\TwoPlayersGameWindow.xaml",
+              "RelativeDocumentMoniker": "KR Cartographers\\View\\TwoPlayersGameWindow.xaml",
+              "ToolTip": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\KR Cartographers\\KR Cartographers\\View\\TwoPlayersGameWindow.xaml",
+              "RelativeToolTip": "KR Cartographers\\View\\TwoPlayersGameWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-09T18:08:51.949Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "TerrainType.cs",
+              "DocumentMoniker": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\KR Cartographers\\KR Cartographers\\Models\\TerrainType.cs",
+              "RelativeDocumentMoniker": "KR Cartographers\\Models\\TerrainType.cs",
+              "ToolTip": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\KR Cartographers\\KR Cartographers\\Models\\TerrainType.cs",
+              "RelativeToolTip": "KR Cartographers\\Models\\TerrainType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T18:07:52.305Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "VBlock.cs",
+              "DocumentMoniker": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\KR Cartographers\\KR Cartographers\\Models\\VBlock.cs",
+              "RelativeDocumentMoniker": "KR Cartographers\\Models\\VBlock.cs",
+              "ToolTip": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\KR Cartographers\\KR Cartographers\\Models\\VBlock.cs",
+              "RelativeToolTip": "KR Cartographers\\Models\\VBlock.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T18:07:51.354Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Seasons.cs",
+              "DocumentMoniker": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\KR Cartographers\\KR Cartographers\\Models\\Seasons.cs",
+              "RelativeDocumentMoniker": "KR Cartographers\\Models\\Seasons.cs",
+              "ToolTip": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\KR Cartographers\\KR Cartographers\\Models\\Seasons.cs",
+              "RelativeToolTip": "KR Cartographers\\Models\\Seasons.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T18:07:50.045Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "QBlock.cs",
+              "DocumentMoniker": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\KR Cartographers\\KR Cartographers\\Models\\QBlock.cs",
+              "RelativeDocumentMoniker": "KR Cartographers\\Models\\QBlock.cs",
+              "ToolTip": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\KR Cartographers\\KR Cartographers\\Models\\QBlock.cs",
+              "RelativeToolTip": "KR Cartographers\\Models\\QBlock.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T18:07:48.792Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Position.cs",
+              "DocumentMoniker": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\KR Cartographers\\KR Cartographers\\Models\\Position.cs",
+              "RelativeDocumentMoniker": "KR Cartographers\\Models\\Position.cs",
+              "ToolTip": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\KR Cartographers\\KR Cartographers\\Models\\Position.cs",
+              "RelativeToolTip": "KR Cartographers\\Models\\Position.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T18:07:47.051Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Player.cs",
+              "DocumentMoniker": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\KR Cartographers\\KR Cartographers\\Models\\Player.cs",
+              "RelativeDocumentMoniker": "KR Cartographers\\Models\\Player.cs",
+              "ToolTip": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\KR Cartographers\\KR Cartographers\\Models\\Player.cs",
+              "RelativeToolTip": "KR Cartographers\\Models\\Player.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T18:07:32.873Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "IIBlock.cs",
+              "DocumentMoniker": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\KR Cartographers\\KR Cartographers\\Models\\IIBlock.cs",
+              "RelativeDocumentMoniker": "KR Cartographers\\Models\\IIBlock.cs",
+              "ToolTip": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\KR Cartographers\\KR Cartographers\\Models\\IIBlock.cs",
+              "RelativeToolTip": "KR Cartographers\\Models\\IIBlock.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T18:07:32.07Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "I3Block.cs",
+              "DocumentMoniker": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\KR Cartographers\\KR Cartographers\\Models\\I3Block.cs",
+              "RelativeDocumentMoniker": "KR Cartographers\\Models\\I3Block.cs",
+              "ToolTip": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\KR Cartographers\\KR Cartographers\\Models\\I3Block.cs",
+              "RelativeToolTip": "KR Cartographers\\Models\\I3Block.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T18:07:30.984Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "I2Block.cs",
+              "DocumentMoniker": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\KR Cartographers\\KR Cartographers\\Models\\I2Block.cs",
+              "RelativeDocumentMoniker": "KR Cartographers\\Models\\I2Block.cs",
+              "ToolTip": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\KR Cartographers\\KR Cartographers\\Models\\I2Block.cs",
+              "RelativeToolTip": "KR Cartographers\\Models\\I2Block.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T18:07:29.843Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "GameGrid.cs",
+              "DocumentMoniker": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\KR Cartographers\\KR Cartographers\\Models\\GameGrid.cs",
+              "RelativeDocumentMoniker": "KR Cartographers\\Models\\GameGrid.cs",
+              "ToolTip": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\KR Cartographers\\KR Cartographers\\Models\\GameGrid.cs",
+              "RelativeToolTip": "KR Cartographers\\Models\\GameGrid.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T18:07:24.458Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "DotBlock.cs",
+              "DocumentMoniker": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\KR Cartographers\\KR Cartographers\\Models\\DotBlock.cs",
+              "RelativeDocumentMoniker": "KR Cartographers\\Models\\DotBlock.cs",
+              "ToolTip": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\KR Cartographers\\KR Cartographers\\Models\\DotBlock.cs",
+              "RelativeToolTip": "KR Cartographers\\Models\\DotBlock.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T18:06:02.947Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Block.cs",
+              "DocumentMoniker": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\KR Cartographers\\KR Cartographers\\Models\\Block.cs",
+              "RelativeDocumentMoniker": "KR Cartographers\\Models\\Block.cs",
+              "ToolTip": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\KR Cartographers\\KR Cartographers\\Models\\Block.cs",
+              "RelativeToolTip": "KR Cartographers\\Models\\Block.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T18:03:23.301Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

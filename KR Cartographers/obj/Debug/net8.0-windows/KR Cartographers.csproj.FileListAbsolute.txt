@@ -1,0 +1,16 @@
+C:\Users\HP\source\repos\KR Cartographers\KR Cartographers\obj\Debug\net8.0-windows\KR Cartographers.csproj.AssemblyReference.cache
+C:\Users\HP\source\repos\KR Cartographers\KR Cartographers\obj\Debug\net8.0-windows\View\MenuWindow.g.cs
+C:\Users\HP\source\repos\KR Cartographers\KR Cartographers\obj\Debug\net8.0-windows\View\OnePlayerGameWindow.g.cs
+C:\Users\HP\source\repos\KR Cartographers\KR Cartographers\obj\Debug\net8.0-windows\View\TwoPlayersGameWindow.g.cs
+C:\Users\HP\source\repos\KR Cartographers\KR Cartographers\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\HP\source\repos\KR Cartographers\KR Cartographers\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\HP\source\repos\KR Cartographers\KR Cartographers\obj\Debug\net8.0-windows\KR Cartographers_MarkupCompile.cache
+C:\Users\HP\source\repos\KR Cartographers\KR Cartographers\obj\Debug\net8.0-windows\KR Cartographers_MarkupCompile.lref
+D:\KR Cartographers\KR Cartographers\obj\Debug\net8.0-windows\KR Cartographers.csproj.AssemblyReference.cache
+D:\KR Cartographers\KR Cartographers\obj\Debug\net8.0-windows\View\MenuWindow.g.cs
+D:\KR Cartographers\KR Cartographers\obj\Debug\net8.0-windows\View\OnePlayerGameWindow.g.cs
+D:\KR Cartographers\KR Cartographers\obj\Debug\net8.0-windows\View\TwoPlayersGameWindow.g.cs
+D:\KR Cartographers\KR Cartographers\obj\Debug\net8.0-windows\App.g.cs
+D:\KR Cartographers\KR Cartographers\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+D:\KR Cartographers\KR Cartographers\obj\Debug\net8.0-windows\KR Cartographers_MarkupCompile.cache
+D:\KR Cartographers\KR Cartographers\obj\Debug\net8.0-windows\KR Cartographers_MarkupCompile.lref

@@ -1,0 +1,359 @@
+﻿<Window x:Class="KR_Cartographers.OnePlayerGameWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KR_Cartographers.ViewModels"
+        xmlns:local1="clr-namespace:KR_Cartographers.Views"
+        mc:Ignorable="d"
+        Title="Cartographers" Height="1080" Width="1920" WindowState="Maximized" WindowStyle="None"
+        Foreground ="White">
+    <Window.DataContext>
+        <local:OnePlayerGameViewModel/>
+    </Window.DataContext>
+    <Window.Background>
+        <ImageBrush ImageSource="../Images/Background/Back1.jpg"/>
+    </Window.Background>
+    <Window.InputBindings>
+        <KeyBinding Key="W" Command="{Binding MoveUpCommand}" CommandParameter="0"/>
+        <KeyBinding Key="A" Command="{Binding MoveLeftCommand}" CommandParameter="0"/>
+        <KeyBinding Key="S" Command="{Binding MoveDownCommand}" CommandParameter="0"/>
+        <KeyBinding Key="D" Command="{Binding MoveRightCommand}" CommandParameter="0"/>
+        <KeyBinding Key="Q" Command="{Binding RotateCCWCommand}" CommandParameter="0"/>
+        <KeyBinding Key="E" Command="{Binding RotateCWCommand}" CommandParameter="0"/>
+        <KeyBinding Key="Enter" Command="{Binding PlaceBlockCommand}" CommandParameter="2"/>
+        <KeyBinding Key="F" Command="{Binding ChengeBlockOrTerrainCommand}" CommandParameter="0"/>
+        <KeyBinding Key="Up" Command="{Binding MoveUpCommand}" CommandParameter="0"/>
+        <KeyBinding Key="Left" Command="{Binding MoveLeftCommand}" CommandParameter="0"/>
+        <KeyBinding Key="Down" Command="{Binding MoveDownCommand}" CommandParameter="0"/>
+        <KeyBinding Key="Right" Command="{Binding MoveRightCommand}" CommandParameter="0"/>
+        <KeyBinding Key="J" Command="{Binding RotateCCWCommand}" CommandParameter="0"/>
+        <KeyBinding Key="L" Command="{Binding RotateCWCommand}" CommandParameter="0"/>
+        <KeyBinding Key="Space" Command="{Binding PlaceBlockCommand}" CommandParameter="2"/>
+        <KeyBinding Key="K" Command="{Binding ChengeBlockOrTerrainCommand}" CommandParameter="0"/>
+        <KeyBinding Key="Esc" Command="{Binding ChangeMenuViewCommand}"/>
+    </Window.InputBindings>
+    <local1:DpiDecorator>
+    <Grid>
+                <ItemsControl ItemsSource="{Binding AllCells}" Background="#FFD491" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <ItemsControl ItemsSource="{Binding}">
+                                <ItemsControl.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <StackPanel IsItemsHost="True" Orientation="Horizontal"/>
+                                    </ItemsPanelTemplate>
+                                </ItemsControl.ItemsPanel>
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <Grid Width="60" Height="60">
+                                            <Image Stretch="Uniform">
+                                                <Image.Style>
+                                                    <Style TargetType="Image">
+                                                        <Style.Resources>
+                                                            <Color x:Key="BorderColor">Yellow</Color>
+                                                        </Style.Resources>
+                                                        <Setter Property="Source" Value="../Images/Terrain/Empty.png" />
+                                                        <Style.Triggers>
+                                                            <DataTrigger Binding="{Binding IsTransparent}" Value="True">
+                                                                <Setter Property="Opacity" Value="0.5"/>
+                                                            </DataTrigger>
+                                                            <MultiDataTrigger>
+                                                                <MultiDataTrigger.Conditions>
+                                                                    <Condition Binding="{Binding IsRuins}" Value="True"/>
+                                                                    <Condition Binding="{Binding TerrainType}" Value="Village"/>
+                                                                </MultiDataTrigger.Conditions>
+                                                                <MultiDataTrigger.Setters>
+                                                                    <Setter Property="Source" Value="../Images/Terrain/VillageRuins.png"/>
+                                                                </MultiDataTrigger.Setters>
+                                                            </MultiDataTrigger>
+                                                            <MultiDataTrigger>
+                                                                <MultiDataTrigger.Conditions>
+                                                                    <Condition Binding="{Binding IsRuins}" Value="False"/>
+                                                                    <Condition Binding="{Binding TerrainType}" Value="Village"/>
+                                                                </MultiDataTrigger.Conditions>
+                                                                <MultiDataTrigger.Setters>
+                                                                    <Setter Property="Source" Value="../Images/Terrain/Village.png"/>
+                                                                </MultiDataTrigger.Setters>
+                                                            </MultiDataTrigger>
+                                                            <MultiDataTrigger>
+                                                                <MultiDataTrigger.Conditions>
+                                                                    <Condition Binding="{Binding IsMountain}" Value="True"/>
+                                                                    <Condition Binding="{Binding TerrainType}" Value="Village"/>
+                                                                </MultiDataTrigger.Conditions>
+                                                                <MultiDataTrigger.Setters>
+                                                                    <Setter Property="Source" Value="../Images/Terrain/VillageMountain.png"/>
+                                                                </MultiDataTrigger.Setters>
+                                                            </MultiDataTrigger>
+                                                            <MultiDataTrigger>
+                                                                <MultiDataTrigger.Conditions>
+                                                                    <Condition Binding="{Binding IsRuins}" Value="True"/>
+                                                                    <Condition Binding="{Binding TerrainType}" Value="Forest"/>
+                                                                </MultiDataTrigger.Conditions>
+                                                                <MultiDataTrigger.Setters>
+                                                                    <Setter Property="Source" Value="../Images/Terrain/ForestRuins.png"/>
+                                                                </MultiDataTrigger.Setters>
+                                                            </MultiDataTrigger>
+                                                            <MultiDataTrigger>
+                                                                <MultiDataTrigger.Conditions>
+                                                                    <Condition Binding="{Binding IsRuins}" Value="False"/>
+                                                                    <Condition Binding="{Binding TerrainType}" Value="Forest"/>
+                                                                </MultiDataTrigger.Conditions>
+                                                                <MultiDataTrigger.Setters>
+                                                                    <Setter Property="Source" Value="../Images/Terrain/Forest.png"/>
+                                                                </MultiDataTrigger.Setters>
+                                                            </MultiDataTrigger>
+                                                            <MultiDataTrigger>
+                                                                <MultiDataTrigger.Conditions>
+                                                                    <Condition Binding="{Binding IsMountain}" Value="True"/>
+                                                                    <Condition Binding="{Binding TerrainType}" Value="Forest"/>
+                                                                </MultiDataTrigger.Conditions>
+                                                                <MultiDataTrigger.Setters>
+                                                                    <Setter Property="Source" Value="../Images/Terrain/ForestMountain.png"/>
+                                                                </MultiDataTrigger.Setters>
+                                                            </MultiDataTrigger>
+                                                            <MultiDataTrigger>
+                                                                <MultiDataTrigger.Conditions>
+                                                                    <Condition Binding="{Binding IsRuins}" Value="True"/>
+                                                                    <Condition Binding="{Binding TerrainType}" Value="Farm"/>
+                                                                </MultiDataTrigger.Conditions>
+                                                                <MultiDataTrigger.Setters>
+                                                                    <Setter Property="Source" Value="../Images/Terrain/FarmRuins.png"/>
+                                                                </MultiDataTrigger.Setters>
+                                                            </MultiDataTrigger>
+                                                            <MultiDataTrigger>
+                                                                <MultiDataTrigger.Conditions>
+                                                                    <Condition Binding="{Binding IsRuins}" Value="False"/>
+                                                                    <Condition Binding="{Binding TerrainType}" Value="Farm"/>
+                                                                </MultiDataTrigger.Conditions>
+                                                                <MultiDataTrigger.Setters>
+                                                                    <Setter Property="Source" Value="../Images/Terrain/Farm.png"/>
+                                                                </MultiDataTrigger.Setters>
+                                                            </MultiDataTrigger>
+                                                            <MultiDataTrigger>
+                                                                <MultiDataTrigger.Conditions>
+                                                                    <Condition Binding="{Binding IsMountain}" Value="True"/>
+                                                                    <Condition Binding="{Binding TerrainType}" Value="Farm"/>
+                                                                </MultiDataTrigger.Conditions>
+                                                                <MultiDataTrigger.Setters>
+                                                                    <Setter Property="Source" Value="../Images/Terrain/FarmMountain.png"/>
+                                                                </MultiDataTrigger.Setters>
+                                                            </MultiDataTrigger>
+                                                            <MultiDataTrigger>
+                                                                <MultiDataTrigger.Conditions>
+                                                                    <Condition Binding="{Binding IsRuins}" Value="True"/>
+                                                                    <Condition Binding="{Binding TerrainType}" Value="Water"/>
+                                                                </MultiDataTrigger.Conditions>
+                                                                <MultiDataTrigger.Setters>
+                                                                    <Setter Property="Source" Value="../Images/Terrain/WaterRuins.png"/>
+                                                                </MultiDataTrigger.Setters>
+                                                            </MultiDataTrigger>
+                                                            <MultiDataTrigger>
+                                                                <MultiDataTrigger.Conditions>
+                                                                    <Condition Binding="{Binding IsRuins}" Value="False"/>
+                                                                    <Condition Binding="{Binding TerrainType}" Value="Water"/>
+                                                                </MultiDataTrigger.Conditions>
+                                                                <MultiDataTrigger.Setters>
+                                                                    <Setter Property="Source" Value="../Images/Terrain/Water.png"/>
+                                                                </MultiDataTrigger.Setters>
+                                                            </MultiDataTrigger>
+                                                            <MultiDataTrigger>
+                                                                <MultiDataTrigger.Conditions>
+                                                                    <Condition Binding="{Binding IsMountain}" Value="True"/>
+                                                                    <Condition Binding="{Binding TerrainType}" Value="Water"/>
+                                                                </MultiDataTrigger.Conditions>
+                                                                <MultiDataTrigger.Setters>
+                                                                    <Setter Property="Source" Value="../Images/Terrain/WaterMountain.png"/>
+                                                                </MultiDataTrigger.Setters>
+                                                            </MultiDataTrigger>
+                                                            <MultiDataTrigger>
+                                                                <MultiDataTrigger.Conditions>
+                                                                    <Condition Binding="{Binding IsRuins}" Value="True"/>
+                                                                    <Condition Binding="{Binding TerrainType}" Value="Monster"/>
+                                                                </MultiDataTrigger.Conditions>
+                                                                <MultiDataTrigger.Setters>
+                                                                    <Setter Property="Source" Value="../Images/Terrain/MonsterRuins.png"/>
+                                                                </MultiDataTrigger.Setters>
+                                                            </MultiDataTrigger>
+                                                            <MultiDataTrigger>
+                                                                <MultiDataTrigger.Conditions>
+                                                                    <Condition Binding="{Binding IsRuins}" Value="False"/>
+                                                                    <Condition Binding="{Binding TerrainType}" Value="Monster"/>
+                                                                </MultiDataTrigger.Conditions>
+                                                                <MultiDataTrigger.Setters>
+                                                                    <Setter Property="Source" Value="../Images/Terrain/Monster.png"/>
+                                                                </MultiDataTrigger.Setters>
+                                                            </MultiDataTrigger>
+                                                            <DataTrigger Binding="{Binding TerrainType}" Value="Mountain">
+                                                                <Setter Property="Source" Value="../Images/Terrain/Mountain.png"/>
+                                                            </DataTrigger>
+                                                            <MultiDataTrigger>
+                                                                <MultiDataTrigger.Conditions>
+                                                                    <Condition Binding="{Binding IsMountain}" Value="True"/>
+                                                                    <Condition Binding="{Binding TerrainType}" Value="Monster"/>
+                                                                </MultiDataTrigger.Conditions>
+                                                                <MultiDataTrigger.Setters>
+                                                                    <Setter Property="Source" Value="../Images/Terrain/MonsterMountain.png"/>
+                                                                </MultiDataTrigger.Setters>
+                                                            </MultiDataTrigger>
+                                                            <MultiDataTrigger>
+                                                                <MultiDataTrigger.Conditions>
+                                                                    <Condition Binding="{Binding TerrainType}" Value="Ruin"/>
+                                                                    <Condition Binding="{Binding IsRuinsHighlighted}" Value="False"/>
+                                                                </MultiDataTrigger.Conditions>
+                                                                <MultiDataTrigger.Setters>
+                                                                    <Setter Property="Source" Value="../Images/Terrain/Ruins.png"/>
+                                                                </MultiDataTrigger.Setters>
+                                                            </MultiDataTrigger>
+                                                            <MultiDataTrigger>
+                                                                <MultiDataTrigger.Conditions>
+                                                                    <Condition Binding="{Binding TerrainType}" Value="Ruin"/>
+                                                                    <Condition Binding="{Binding IsRuinsHighlighted}" Value="True"/>
+                                                                </MultiDataTrigger.Conditions>
+                                                                <MultiDataTrigger.Setters>
+                                                                    <Setter Property="Source" Value="../Images/Terrain/HighlightedRuin.png"/>
+                                                                </MultiDataTrigger.Setters>
+                                                            </MultiDataTrigger>
+                                                        </Style.Triggers>
+                                                    </Style>
+                                                </Image.Style>
+                                            </Image>
+                                        </Grid>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+                <Grid>
+                    <Canvas>
+                        <Image Source="{Binding ImageUrl}" ToolTip="{Binding CardDescription}" Canvas.Top="230" Canvas.Left="1374">
+                            <Image.Clip>
+                                <RectangleGeometry Rect="0,0,462,630" RadiusX="30" RadiusY="30" />
+                            </Image.Clip>
+                        </Image>
+                        <Image Source="../Images/Letters/A.jpg" Height="100" Canvas.Top="45" Canvas.Left="20">
+                            <Image.Clip>
+                                <RectangleGeometry Rect="0,0,65,100" RadiusX="10" RadiusY="10" />
+                            </Image.Clip>
+                        </Image>
+                        <Image Source="../Images/Letters/B.jpg" Height="100" Canvas.Top="45" Canvas.Left="330">
+                            <Image.Clip>
+                                <RectangleGeometry Rect="0,0,65,100" RadiusX="10" RadiusY="10" />
+                            </Image.Clip>
+                        </Image>
+                        <Image Source="../Images/Letters/C.jpg" Height="100" Canvas.Top="545" Canvas.Left="20">
+                            <Image.Clip>
+                                <RectangleGeometry Rect="0,0,65,100" RadiusX="10" RadiusY="10" />
+                            </Image.Clip>
+                        </Image>
+                        <Image Source="../Images/Letters/D.jpg" Height="100" Canvas.Top="545" Canvas.Left="330">
+                            <Image.Clip>
+                                <RectangleGeometry Rect="0,0,65,100" RadiusX="10" RadiusY="10" />
+                            </Image.Clip>
+                        </Image>
+                        <Image Source="{Binding ImageConditionA}" ToolTip="{Binding ConditionAText}" Width="280" Canvas.Top="150" Canvas.Left="20">
+                            <Image.Clip>
+                                <RectangleGeometry Rect="0,0,280,382" RadiusX="20" RadiusY="20" />
+                            </Image.Clip>
+                        </Image>
+                        <Image Source="{Binding ImageConditionB}" ToolTip="{Binding ConditionBText}" Width="280" Canvas.Top="150" Canvas.Left="330">
+                            <Image.Clip>
+                                <RectangleGeometry Rect="0,0,280,382" RadiusX="20" RadiusY="20" />
+                            </Image.Clip>
+                        </Image>
+                        <Image Source="{Binding ImageConditionC}" ToolTip="{Binding ConditionCText}" Width="280" Canvas.Top="650" Canvas.Left="20">
+                            <Image.Clip>
+                                <RectangleGeometry Rect="0,0,280,382" RadiusX="20" RadiusY="20" />
+                            </Image.Clip>
+                        </Image>
+                        <Image Source="{Binding ImageConditionD}" ToolTip="{Binding ConditionDText}" Width="280" Canvas.Top="650" Canvas.Left="330">
+                            <Image.Clip>
+                                <RectangleGeometry Rect="0,0,280,382" RadiusX="20" RadiusY="20" />
+                            </Image.Clip>
+                        </Image>
+                        <Image Height="200" Canvas.Top="5" Canvas.Left="630" ToolTip="{Binding CurrentSeason}">
+                            <Image.Clip>
+                                <RectangleGeometry Rect="0,0,129,200" RadiusX="10" RadiusY="10" />
+                            </Image.Clip>
+                            <Image.Style>
+                                <Style TargetType="Image">
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding CurrentSeason}" Value="Весна">
+                                            <Setter Property="Source" Value="../Images/Seasons/SpringCard.jpg"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding CurrentSeason}" Value="Літо">
+                                            <Setter Property="Source" Value="../Images/Seasons/SummerCard.jpg" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding CurrentSeason}" Value="Осінь">
+                                            <Setter Property="Source" Value="../Images/Seasons/AutumnCard.jpg" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding CurrentSeason}" Value="Зима">
+                                            <Setter Property="Source" Value="../Images/Seasons/WinterCard.jpg" />
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Image.Style>
+                        </Image>
+                        <Border Canvas.Top="75" Canvas.Left="230" Width="70" Height="70" Background="#4c2c24" CornerRadius="10">
+                            <Label Content="{Binding ConditionAPoints}" FontSize="50" Foreground="White" Background="Transparent" FontFamily="Old English Text MT" 
+                           HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                        </Border>
+                        <Border Canvas.Top="75" Canvas.Left="540" Width="70" Height="70" Background="#4c2c24" CornerRadius="10">
+                            <Label Content="{Binding ConditionBPoints}" FontSize="50" Foreground="White" Background="Transparent" FontFamily="Old English Text MT" 
+           HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                        </Border>
+                        <Border Canvas.Top="575" Canvas.Left="230" Width="70" Height="70" Background="#4c2c24" CornerRadius="10">
+                            <Label Content="{Binding ConditionCPoints}" FontSize="50" Foreground="White" Background="Transparent" FontFamily="Old English Text MT" 
+           HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                        </Border>
+                        <Border Canvas.Top="575" Canvas.Left="540" Width="70" Height="70" Background="#4c2c24" CornerRadius="10" >
+                            <Label Content="{Binding ConditionDPoints}" FontSize="50" Foreground="White" Background="Transparent" FontFamily="Old English Text MT" 
+           HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                        </Border>
+                        <Border Canvas.Top="50" Canvas.Left="1040" Width="250" Height="150" Background="#4c2c24" CornerRadius="10">
+                            <Label Content="{Binding Points}" FontSize="100" Foreground="White" Background="Transparent" FontFamily="Old English Text MT" 
+           HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                        </Border>
+                        <Image Source="../Images/Terrain/Star1.png" ToolTip="Зірки репутацій" Width="150" Canvas.Top="50" Canvas.Left="880">
+                        </Image>
+                        <Image Source="../Images/Terrain/Monster.png" ToolTip="Монстри: в кінці сезону втратьте по одній зірці репутацій за кожну пусту клітинку суміжну з клітинкою монстрів" Width="100" Canvas.Top="920" Canvas.Left="750">
+                        </Image>
+                        <Border Canvas.Top="920" Canvas.Left="855" Width="100" Height="100" Background="#6c25be" CornerRadius="10">
+                            <Label Content="{Binding MinusMonsters}" FontSize="50" Foreground="White" Background="Transparent" FontFamily="Old English Text MT" 
+           HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                        </Border>
+                        <Image Source="../Images/Terrain/Coin.png" ToolTip="Монети: в кінці сезону отримайте одну зірку репутації за кожну монету" Width="100" Canvas.Top="920" Canvas.Left="1070">
+                        </Image>
+                        <Border Canvas.Top="920" Canvas.Left="965" Width="100" Height="100" Background="#EC940D" CornerRadius="10">
+                            <Label Content="{Binding Coins}" FontSize="50" Foreground="White" Background="Transparent" FontFamily="Old English Text MT" 
+           HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                        </Border>
+                        <Border Canvas.Top="75" Canvas.Left="1374" Width="300" Height="100" Background="#4c2c24" CornerRadius="10">
+                            <Label Content="Сезон триває:" FontSize="35" Foreground="White" Background="Transparent" FontFamily="{StaticResource IrpinType}" 
+           HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                        </Border>
+                        <Border Canvas.Top="65" Canvas.Left="1725" Width="120" Height="120" Background="#FFDD99" CornerRadius="60">
+                            <Label Content="{Binding SeasonDays}" FontSize="70" Foreground="Black" Background="Transparent" FontFamily="Old English Text MT" 
+           HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                        </Border>
+                    </Canvas>
+                </Grid>
+            <Grid Grid.Row="0" Grid.RowSpan="2" Background="#3F000000" Visibility="{Binding MenuVisibility, Converter={StaticResource BoolToVis}}">
+                <Grid Width="700" Height="550" Visibility="{Binding MenuSettingVisibility[0], Converter={StaticResource BoolToVis}}">
+                    <Rectangle Fill="#4c2c24" Width="700" Height="550" Opacity="0.4" RadiusX="35" RadiusY="35"/>
+                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                        <Button Style="{StaticResource GameButton}" Background="#4892CB" Width="350" Height="100" Content="Назад" Margin="0 0 0 30" FontSize="32" Command="{Binding ChangeMenuViewCommand}"/>
+                        <Button Style="{StaticResource GameButton}" Background="#4892CB" Width="350" Height="100" Content="Налаштування" Margin="0 0 0 30" FontSize="32" Command="{Binding ShowSettingsCommand}"/>
+                        <Button Style="{StaticResource GameButton}" Background="#A42a2c" Width="350" Height="100" Content="Вийти" Margin="0 0 0 30" FontSize="32" Click="Button_Click" Command="{Binding QuitCommand}" />
+                    </StackPanel>
+                </Grid>
+                <Canvas Width="700" Height="300" Visibility="{Binding MenuSettingVisibility[1], Converter={StaticResource BoolToVis}}">
+                    <Rectangle Fill="#4c2c24" Width="700" Height="400" Opacity="0.75" RadiusX="35" RadiusY="35"/>
+                    <Button Background="#4892CB" Width="350" Height="100" Canvas.Left="175" Canvas.Top="200" Content="Назад" Style="{StaticResource GameButton}" Command="{Binding ChangeMenuViewCommand}"/>
+                    <Label FontSize="32" Canvas.Top="95" Canvas.Left="300">Звук</Label>
+                </Canvas>
+            </Grid>
+        </Grid>
+    </local1:DpiDecorator>
+</Window>   
