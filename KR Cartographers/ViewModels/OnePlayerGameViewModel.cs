@@ -75,6 +75,7 @@ namespace KR_Cartographers.ViewModels
         {
             _windowService = new WindowService();
             StartGame();
+
             {
                 MoveRightCommand = new RelayCommand(obj =>
                 {
@@ -934,45 +935,47 @@ namespace KR_Cartographers.ViewModels
 
         public bool CanPlaceBlock(Card card, int currentBlock, GameGrid gameGrid, bool wasFit, ref bool ruinForDot, int currentCard)
         {
-            bool isBlockRuin = false;
-            if (currentCard > 0 && Game.CardsList[currentCard - 1].IsRuin && Game.IsRuinInGrid(gameGrid) && !wasFit || (wasFit && ruinForDot && Game.IsRuinInGrid(gameGrid)))
+            if (currentCard > 0 && Game.CardsList[currentCard - 1].IsRuin && Game.IsRuinInGrid(gameGrid) && !wasFit ||
+                (wasFit && ruinForDot && Game.IsRuinInGrid(gameGrid)))
             {
-                foreach (Position position in card.Block[currentBlock].TilePositions())
-                {
-                    int row = position.Row;
-                    int column = position.Column;
-
-                    if (!gameGrid.IsEmptyOrRuin(row, column))
-                    {
-                        return false;
-                    }
-                    if (gameGrid.IsRuin(row, column))
-                    {
-                        ruinForDot = false;
-                        isBlockRuin = true;
-                    }
-                }
-                return isBlockRuin;
+                return CheckTilePositions(card.Block[currentBlock], gameGrid, ref ruinForDot, checkForRuin: true);
             }
             else if (wasFit && ruinForDot && !Game.IsRuinInGrid(gameGrid))
             {
-                foreach (Position position in card.Block[currentBlock].TilePositions())
-                {
-                    int row = position.Row;
-                    int column = position.Column;
+                return CheckTilePositions(card.Block[currentBlock], gameGrid, ref ruinForDot, checkForEmpty: true);
+            }
 
-                    if (gameGrid.IsEmpty(row, column))
-                    {
-                        ruinForDot = false;
-                        return true;
-                    }
-                }
-                return false;
-            }
-            else
+            return Game.CanPlaceBlock(gameGrid, card.Block[currentBlock]);
+        }
+
+        private bool CheckTilePositions(Block block, GameGrid gameGrid, ref bool ruinForDot, bool checkForRuin = false, bool checkForEmpty = false)
+        {
+            bool isBlockRuin = false;
+
+            foreach (Position position in block.TilePositions())
             {
-                return Game.CanPlaceBlock(gameGrid, card.Block[currentBlock]);
+                int row = position.Row;
+                int column = position.Column;
+
+                if (!gameGrid.IsEmptyOrRuin(row, column))
+                {
+                    return false;
+                }
+
+                if (checkForRuin && gameGrid.IsRuin(row, column))
+                {
+                    ruinForDot = false;
+                    isBlockRuin = true;
+                }
+
+                if (checkForEmpty && gameGrid.IsEmpty(row, column))
+                {
+                    ruinForDot = false;
+                    return true;
+                }
             }
+
+            return checkForRuin ? isBlockRuin : false;
         }
 
         public void ChangeSeason()
