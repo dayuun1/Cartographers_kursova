@@ -295,14 +295,6 @@ namespace KR_Cartographers.Models
             }
         }
 
-        public static void RotateBlockCW(GameGrid gameGrid, Block CurrentBlock)
-        {
-            CurrentBlock.RotateCW();
-            if (!BlockIsInside(gameGrid, CurrentBlock))
-            {
-                CurrentBlock.RotateCCW();
-            }
-        }
 
 
 
