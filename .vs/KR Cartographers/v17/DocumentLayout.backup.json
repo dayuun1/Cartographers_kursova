@@ -134,8 +134,7 @@
               "RelativeToolTip": "KR Cartographers\\Models\\ConditionsCard.cs",
               "ViewState": "AgIAALkAAAAAAAAAAAAIwCAAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T18:04:59.488Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-09T18:04:59.488Z"
             },
             {
               "$type": "Document",
@@ -241,10 +240,14 @@
               "RelativeDocumentMoniker": "KR Cartographers\\Models\\Game.cs",
               "ToolTip": "E:\\\u041D\u0430\u0432\u0447\u0430\u043D\u043D\u044F\\KR Cartographers\\KR Cartographers\\Models\\Game.cs",
               "RelativeToolTip": "KR Cartographers\\Models\\Game.cs",
-              "ViewState": "AgIAAAcBAAAAAAAAAAAQwCcBAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAADMBAAAAAAAAAAAkwFEBAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-09T18:06:04.926Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
@@ -458,10 +461,6 @@
               "ViewState": "AQIAAAoAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-09T18:03:23.301Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }

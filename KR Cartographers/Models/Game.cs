@@ -250,90 +250,48 @@ namespace KR_Cartographers.Models
             return false;
         }
 
+        private static readonly Dictionary<string, (Position, int, int)> monstersCards = new()
+{
+    { "Goblin Attack", (new Position( gameGrid.Rows - 3, gameGrid.Columns - 3), -1, -1) },
+    { "Bugbear Assault", (new Position(0, gameGrid.Columns - 1), 1, -1) },
+    { "Kobold Onslaught", (new Position(gameGrid.Rows - 1, -1), -1, 1) },
+    { "Gnoll Raid", (new Position(0, -1), 1, 1) }
+};
+
+        private static bool TryPlaceBlock(GameGrid gameGrid, Card card, Position start, int rowStep, int colStep)
+        {
+            Block block = card.Block[0];
+
+            for (int col = start.Column; col >= 0 && col < gameGrid.Columns; col += colStep)
+            {
+                for (int row = start.Row; row >= 0 && row < gameGrid.Rows; row += rowStep)
+                {
+                    block.offset = new Position(row, col);
+                    if (CanPlaceBlock(gameGrid, block))
+                    {
+                        PlaceBlock(gameGrid, card, 0, 0);
+                        return true;
+                    }
+                }
+            }
+            block.Reset();
+            return false;
+        }
+
         public static void AutoDemonsSpawn(GameGrid gameGrid, Card card)
         {
-            Position[] corners = new Position[]
+            if (monstersCards.TryGetValue(card.Name, out var place))
             {
-            new Position(0, -1),
-            new Position(0, gameGrid.Columns - 1),
-            new Position(gameGrid.Rows - 1, -1),
-            new Position(gameGrid.Rows - 3, gameGrid.Columns - 3),
-            };
-            Block block = card.Block[0];
-            Position startPosition = corners[3];
+                TryPlaceBlock(gameGrid, card, place.Item1, place.Item2, place.Item3);
+            }
+        }
 
-            switch (card.Name)
+        public static void RotateBlockCW(GameGrid gameGrid, Block CurrentBlock)
+        {
+            CurrentBlock.RotateCW();
+            if (!BlockIsInside(gameGrid, CurrentBlock))
             {
-                case "Goblin Attack":
-                    startPosition = corners[3];
-                    for (int col = startPosition.Column; col < gameGrid.Columns && col >= 0; col--)
-                    {
-                        for (int row = startPosition.Row; row < gameGrid.Rows && row >= 0; row--)
-                        {
-
-                            block.offset = new Position(row, col);
-                            if (CanPlaceBlock(gameGrid, block))
-                            {
-                                PlaceBlock(gameGrid, card, 0, 0);
-                                return;
-                            }
-                        }
-                    }
-                    block.Reset();
-                    break;
-                case "Bugbear Assault":
-                    startPosition = corners[1];
-
-                    for (int col = startPosition.Column; col < gameGrid.Columns && col >= 0; col--)
-                    {
-                        for (int row = startPosition.Row; row < gameGrid.Rows; row++)
-                        {
-                            block.offset = new Position(row, col);
-                            if (CanPlaceBlock(gameGrid, block))
-                            {
-                                PlaceBlock(gameGrid, card, 0, 0);
-                                return;
-                            }
-                        }
-                    }
-                    block.Reset();
-                    break;
-                case "Kobold Onslaught":
-                    startPosition = corners[2];
-
-                    for (int col = startPosition.Column; col < gameGrid.Columns; col++)
-                    {
-                        for (int row = startPosition.Row; row < gameGrid.Rows && row >= 0; row--)
-                        {
-                            block.offset = new Position(row, col);
-                            if (CanPlaceBlock(gameGrid, block))
-                            {
-                                PlaceBlock(gameGrid, card, 0, 0);
-                                return;
-                            }
-                        }
-                    }
-                    block.Reset();
-                    break;
-                case "Gnoll Raid":
-                    startPosition = corners[0];
-
-                    for (int col = startPosition.Column; col < gameGrid.Columns; col++)
-                    {
-                        for (int row = startPosition.Row; row < gameGrid.Rows; row++)
-                        {
-                            block.offset = new Position(row, col);
-                            if (CanPlaceBlock(gameGrid, block))
-                            {
-                                PlaceBlock(gameGrid, card, 0, 0);
-                                return;
-                            }
-                        }
-                    }
-                    block.Reset();
-                    break;
-                default:
-                    break;
+                CurrentBlock.RotateCCW();
             }
         }
 
