@@ -390,48 +390,17 @@ namespace KR_Cartographers.Models
         public static int CountMonsters(GameGrid gameGrid)
         {
             int minusPoints = 0;
+            var directions = new (int, int)[] { (-1, 0), (1, 0), (0, -1), (0, 1) };
+
             for (int i = 0; i < gameGrid.Rows; i++)
             {
                 for (int j = 0; j < gameGrid.Columns; j++)
                 {
-                    bool isMonster = false;
-                    if (gameGrid.IsEmptyOrRuin(i, j))
+                    if (!gameGrid.IsEmptyOrRuin(i, j)) continue;
+
+                    if (directions.Any(d => gameGrid.IsInside(i + d.Item1, j + d.Item2) && gameGrid[i + d.Item1, j + d.Item2] == 5))
                     {
-                        if (i > 0)
-                        {
-                            if (gameGrid[i - 1, j] == 5)
-                            {
-                                isMonster = true;
-                            }
-                        }
-
-                        if (i < gameGrid.Rows - 1)
-                        {
-                            if (gameGrid[i + 1, j] == 5)
-                            {
-                                isMonster = true;
-                            }
-                        }
-
-                        if (j > 0)
-                        {
-                            if (gameGrid[i, j - 1] == 5)
-                            {
-                                isMonster = true;
-                            }
-                        }
-
-                        if (j < gameGrid.Columns - 1)
-                        {
-                            if (gameGrid[i, j + 1] == 5)
-                            {
-                                isMonster = true;
-                            }
-                        }
-                        if (isMonster)
-                        {
-                            minusPoints--;
-                        }
+                        minusPoints--;
                     }
                 }
             }
@@ -441,48 +410,17 @@ namespace KR_Cartographers.Models
         public static int CountCoinsByMountains(GameGrid gameGrid)
         {
             int countOfMountain = 0;
+            var directions = new (int, int)[] { (-1, 0), (1, 0), (0, -1), (0, 1) };
+
             for (int i = 0; i < gameGrid.Rows; i++)
             {
                 for (int j = 0; j < gameGrid.Columns; j++)
                 {
-                    bool isCoin = true;
-                    if (gameGrid[i, j] == 6)
+                    if (gameGrid[i, j] != 6) continue;
+
+                    if (directions.All(d => !gameGrid.IsInside(i + d.Item1, j + d.Item2) || !gameGrid.IsEmptyOrRuin(i + d.Item1, j + d.Item2)))
                     {
-                        if (i > 0)
-                        {
-                            if (gameGrid.IsEmptyOrRuin(i - 1, j))
-                            {
-                                isCoin = false;
-                            }
-                        }
-
-                        if (i < gameGrid.Rows - 1)
-                        {
-                            if (gameGrid.IsEmptyOrRuin(i + 1, j))
-                            {
-                                isCoin = false;
-                            }
-                        }
-
-                        if (j > 0)
-                        {
-                            if (gameGrid.IsEmptyOrRuin(i, j - 1))
-                            {
-                                isCoin = false;
-                            }
-                        }
-
-                        if (j < gameGrid.Columns - 1)
-                        {
-                            if (gameGrid.IsEmptyOrRuin(i, j + 1))
-                            {
-                                isCoin = false;
-                            }
-                        }
-                        if (isCoin)
-                        {
-                            countOfMountain++;
-                        }
+                        countOfMountain++;
                     }
                 }
             }
